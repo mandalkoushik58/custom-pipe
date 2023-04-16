@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { cricketers } from './shared/model/const/player';
+import { Iplayer } from './shared/model/data';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'customPipe';
+  searchByValue!:string;
+
+  playersArray:Iplayer[]=cricketers
 }
